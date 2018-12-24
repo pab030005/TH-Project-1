@@ -3,8 +3,6 @@ Treehouse Techdegree:
 FSJS project 1 - A Random Quote Generator
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
 
 /***
   Array of 5 quote objects with actual quote, source, etc.
@@ -55,7 +53,7 @@ var quotes = [
 
 /***
   Function "getRandomQuote", uses random # generator 5 numbers from 0-4 to access random quote objects in array.
-  var selectedQuote and selectedSource hold source and quote values of object to be added to string
+  var(s) selectedQuote and selectedSource hold source and quote values of object to be added to string
   Conditional used to add image into HTML if quote object has an image. Not all quotes will have images.
   Returns HTML string for quote statement, source, and image if applicable.
 ***/
@@ -91,12 +89,10 @@ return randomQuote
 }
 
 
-
-
 /***
 New function "printQuote" calls "getRandomQuote", stores in variable inside
 function so that everytime "printQuote" is called the "getRandomQuote" function is
-invoked and new quote generated.
+invoked and new quote is generated.
 ***/
 
 function printQuote() {
